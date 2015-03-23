@@ -2,7 +2,17 @@
 
 Recently I was on an engagement where I needed to perform an email phishing attack. I threw together a python script to automate the attack and decided to take out the hardcoded data and add more features for future phishing engagements.
 
-## Features Include
+Specifically I wanted to be able to:
+- Keep a generic list of well formatted phishing HTML emails and replace the links and images on the fly
+- Throttle the sending of messages
+- Allow sending from multiple email addresses
+- Allow sending from multiple mail servers 
+
+##Status
+
+This is currently a scantly tested Alpha. I need to add a lot of error checking and logging before I code too much more. If you use this and have any problems please let me know. Also I'm not responsible for how you use this script. Make sure you have full consent from the target organization or perform attacks against your test network.
+
+## Current Features Include
 
 - Specify multiple mail servers
 - Loadbalance mail servers with RoundRobin or Random
@@ -20,6 +30,7 @@ Recently I was on an engagement where I needed to perform an email phishing atta
 - Send commands to the script remotely over an encrypted connection
 - Add attachments to the email
 - Enhance the grouping to allow specifying which email source and mail server to use for which group
+- Specify a grouping for from email addresses and email servers
 
 ## Help Output
 
