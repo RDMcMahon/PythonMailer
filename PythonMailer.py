@@ -120,14 +120,14 @@ class CoreEngine:
             msg.attach(html_mime)
             
             #Create smtp client
-            ###client = smtplib.SMTP(host=mail_server[0], port=str(mail_server[1]))
+            client = smtplib.SMTP(host=mail_server[0], port=str(mail_server[1]))
             
             #Send the email
             print '[*] Sending email'
-            ###client.sendmail(mail_from,email_address,msg.as_string())
+            client.sendmail(mail_from,email_address,msg.as_string())
             
             #Close the client
-            ###client.quit()
+            client.quit()
             
             print '[*] Email sent'
         
